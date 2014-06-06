@@ -12,6 +12,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
 	<link rel="stylesheet" href="css/compiled.css">
+  <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> -->
 
 	<!-- <script src="js/vendor/modernizr-2.8.0.js"></script> -->
 
@@ -20,36 +21,45 @@
 <div class="container">
 <div class="row">
   <div class="col-md-3">
-
-    <ul>
-	     <li><a href="#classrooms">Classrooms</a>
-	    		<ul>
-	    			<li><a href="#avcontrols">AV controls</a></li>
-	    			<li><a href="#macmini">Built-in computer</a></li>
-	    			<li><a href="#classroom_laptop">Connecting a Laptop</a></li>
-	    			<li><a href="#dvdplayer">DVD Player</a></li>
-	    			<li><a href="#overhead">Overhead Projector</a></li>
-    		</ul>
-	    	</li>
-	    	<li>	<a href="#group_study_rooms">Group Study Rooms</a>
-	    		<ul>
-	    			<li><a href="#bloomberg">Bloomberg computers</a></li>
-	    			<li><a href="#gsr_laptop">Connecting a Laptop</a></li>
+	    	<ul>
+		      <li><a href="#classrooms">Classrooms</a>
+		    		<ul>
+		    			<li><a href="#av_controls">AV controls</a></li>
+		    			<li><a href="#macmini">Built-in computer</a></li>
+		    			<li><a href="#classroom_laptop">Connecting a Laptop</a></li>
+		    			<li><a href="#dvdplayer">DVD Player</a></li>
+		    			<li><a href="#overhead">Overhead Projector</a></li>
 	    		</ul>
-	    	</li>
-	    	<li><a href="#">Printing</a>
-	    		<ul>
-	    			<li><a href="#">Copy Room Printer</a></li>
-	    			<li><a href="#">Pharos Printer</a></li>
-	    			<li><a href="#">Kiosk Computers</a></li>
-	    		</ul>
-	    	</li>
-	    	<li><a href="#">Faculty Hotel Offices</a></li>
-	    	<li><a href="#">Lecture Capture</a></li>
-	    	<li><a href="#">Network</a></li>
-	    	<li><a href="#">Phones</a></li>
-    </ul>
+		    	</li>
+		    	<li>	<a href="#group_study_rooms">Group Study Rooms</a>
+		    		<ul>
+		    			<li><a href="#bloomberg">Bloomberg computers</a></li>
+		    			<li><a href="#gsr_laptop">Connecting a Laptop</a></li>
+		    		</ul>
+		    	</li>
+		    	<li><a href="#printing">Printing</a>
+		    		<ul>
+		    			<li><a href="#copy_room_printer">Copy Room Printer</a></li>
+		    			<li><a href="#pharos">Pharos Printer</a></li>
+		    		</ul>
+		    	</li>
+		    	<li><a href="#kiosk">Kiosk Computers</a></li>
+		    	<li><a href="#hotel_offices">Faculty Hotel Offices</a></li>
+		    	<li><a href="#lecture_capture">Lecture Capture</a></li>
+		    	<li><a href="#">Network</a></li>
+		    	<li><a href="#">Wireless</a></li>
+		    	<li><a href="#">Phones</a></li>
+		    	<li><a href="#">Fax</a></li>
+	    </ul>
   </div> <!-- col-md-3 -->
+
+
+
+
+
+
+
+
 
 
 
@@ -57,17 +67,37 @@
 
     <div id="classrooms">
     		<h3>Classrooms</h3>
-    			<h4 id="avcontrols">AV Controls</h4>
+    			<h4 id="av_controls">AV System Controls</h4>
     			<p>The AV System is controlled by a wall mounted touchscreen.
     			   In rooms 527 and 529 the screen is located next to the door.
     			   In rooms 451, 452 and 453 it is located on the wall next to
-    			   the whiteboard</p>
+    			   the whiteboard.</p>
+    			   <ul>
+    			   	<li>The 4 icons on the top row select which source the projector will show
+    			   		<ul>
+    			   			<li>Laptop VGA - for for displaying a laptop connected with the VGA cable</li>
+    			   			<li>Laptop HDMI - for displaying a laptop connected with the HDMI cable</li>
+    			   			<li>Mac Mini - for displaying the lectern's built in computer</li>
+    			   			<li>DVD - for using the DVD player located in the AV rack</li>
+    			   		</ul>
+    			   	<li>The <b>Off</b> and <b>On</b> buttons in the left column turn the projector on and off.
+    			   		  Note that after turning the projector off it can take up to 5 minutes to turn it back on</li>
+    			   	<li>Below the Projector Off/On buttons is a <b>Mute</b> button which toggles the projector video mute.
+    			   	   	Video mute is similar to turning the projector off but you can turn it back on instantly</li>
+    			   	<li>The <b>Screen Control</b> button will show a menu to raise or lower the projector screens</li>
+    			   	<li>Controls for sound volume are on the right side column of the panel.</li>
+    			   	<li>When the DVD input is selected the DVD player control buttons are shown in the middle of the panel</li>
+    			   	<li>The screen button will bring up buttons to raise or lower the screens</li>
+    			   	<li>The Red <b>Off</b> button at the bottom of the screen will turn the projectors off and raise the screens</li>
+    			   </ul>
+
+
     			<h4 id="classroom_laptop">Using a laptop with the classroom projector</h4>
-    			<p>The classroom Lecterns have cables to connect a laptop using either
+    			<p>The classroom lecterns have cables to connect a laptop using either
     				VGA or HDMI ports to the projector.  Note that mac laptops do not have VGA or HDMI
     				ports and will need an adapter to connect to the projector.
     				<ul>
-    				<li>Turn the AV system on and press the icon for Laptop VGA or
+    				<li>Turn the AV system on and press the icon on the touchscreen for Laptop VGA or
     			    Laptop HDMI for the connection you will be using.</li>
     			    <li>Connect either the VGA or HDMI cable from the lectern to
     			    	the laptop.  If you are using an adapter connect the cable to
@@ -86,7 +116,7 @@
     				The lectern in each classroom has a built in monitor and keyboard that
     				connect to a mac mini computer that has both
     				Mac and Windows 7 operating systems on it. To user the computer
-    				turn the AV system on and press the icon
+    				turn the AV system touchpanel on and press the icon
     				labeled <b>Mac Mini</b>.
     				<ul>
     				<li>To access the monitor and keyboard lift up the
@@ -162,6 +192,61 @@
    		</p>
     </div> <!-- #group_study_rooms -->
 
+    <div id="printing">
+    		<h3>Printing</h3>
+    			<h4 id="copy_room_printer">Copy Room Ricoh Printer</h4>
+	    			<p>The Ricoh machine in the fifth floor copy room is capable of color and
+	    				black and white printing &amp; copying, scanning and faxing.
+	    				To setup a computer to print to it follow these directions for
+	    				<a href="#">Windows</a> or <a href="#">Mac</a>.</p>
+				<h4 id="pharos">Pharos</h4>
+					<p>There are two Pharos printers available for staff and students.  One is on the fifth floor
+						 in the hallway outside the copy room. The other is on the fourth floor outside room 454.
+						 The Pharos system is managed by the USF Purchasing department
+						and instructions for using it is located on their
+						<a href="http://www.usfca.edu/purchasing/pharos/">website</a>.
+					</p>
+					<ul>
+						<li>When printing from a Windows computer use the printer called <b>USF Ricoh Secure Print</b>.
+							On a Mac it will be called <b>XXXXXXXX</b>.  If your computer does not have that printer
+						  listed you will need to install it </li>
+					</ul>
+    	</	div> <!-- #printing -->
+
+		<div id="kiosk">
+			<h3>Kiosk Computers</h3>
+			<p>There are two Mac kiosk computers located on the fifth floor between the
+				elevators and the classrooms.  The power button and USB connections for
+				are located on the back side of the computer.  The kiosk computers can print
+				to the Pharos printers.</p>
+		</div>
+
+		<div id="hotel_office">
+			<h3>Faculty Hotel Offices</h3>
+			<p>The monitor, keyboard and mouse are connected to a switcher box that allows
+				them to be easily switched to connect to either the desktop computer or a laptop. <br>
+				Press the <b>XXXXXX</b> button on the switcher to toggle between the desktop and laptop
+				connection.  To connect a laptop find the cable with the VGA and USB connector and connect
+				them both to the laptop.</p>
+		</div>
+
+		<div id="lecture_capture">
+			<h3>Lecture Capture</h3>
+			<p>A lecture capture system called Echo360 is installed in classrooms 451, 452, 453, 527 &amp; 529. The
+				system is fully automated and records a video of the area around the lectern and a direct feed from
+				the projector.  Recordings must be requested in advance through ITS at
+				<a href="http://itsreservations.usfca.edu">http://itsreservations.usfca.edu</a>.  Once you have submitted a
+				request and received confirmation there is nothing further you need to do.  The system will automatically
+				turn on and off at your requested time.  After the recording completes it takes up to 2 days to process
+				and then a link to view it will be emailed to the requestor.</p>
+
+		</div> <!-- # -->
+
+		<div id="">
+			<h3></h3>
+			<p></p>
+		</div> <!-- # -->
+
   </div> <!-- col-md-9 -->
 
 
@@ -169,7 +254,7 @@
 </div> <!-- container -->
 
     <script src="js/vendor/jquery-1.11.1.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
     <!-- <script src="js/plugins.js"></script> -->
     <script src="js/vendor/bootstrap.js"></script>
     <script src="js/main.js"></script>

@@ -1,0 +1,14 @@
+/* line 1, style.scss */
+#wrapper {
+  margin-left: 20px;
+}
+
+/* line 5, style.scss */
+.well {
+  max-width: 700px;
+}
+
+/* line 9, style.scss */
+p, a {
+  font-size: 17px;
+}
