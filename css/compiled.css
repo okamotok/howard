@@ -1,14 +1,33 @@
-/* line 1, style.scss */
+/* line 1, style.sass */
 #wrapper {
   margin-left: 20px;
 }
 
-/* line 5, style.scss */
-.well {
-  max-width: 700px;
+/* line 4, style.sass */
+body {
+  padding: 0;
+  margin: 0;
 }
 
-/* line 9, style.scss */
-p, a {
-  font-size: 17px;
+/* line 9, style.sass */
+#container {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 14, style.sass */
+#left_col {
+  position: fixed;
+  overflow: auto;
+  width: 230px;
+}
+/* line 19, style.sass */
+#left_col a {
+  font-size: 14px;
+}
+
+/* line 22, style.sass */
+#right_col {
+  margin-left: 260px;
+  width: auto;
 }

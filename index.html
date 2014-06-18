@@ -8,7 +8,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
-	<link rel="stylesheet" href="css/boilerplate.css">
+	<!-- <link rel="stylesheet" href="css/boilerplate.css"> -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
 	<link rel="stylesheet" href="css/compiled.css">
@@ -18,9 +18,10 @@
 
 </head>
 <body>
-<div class="container">
-<div class="row">
-  <div class="col-md-3">
+<div id="container">
+<!-- <div class="row"> -->
+  <!-- <div class="col-md-3"> -->
+  <div id="left_col">
 	    	<ul>
 		      <li><a href="#classrooms">Classrooms</a>
 		    		<ul>
@@ -54,7 +55,8 @@
 		    	<li><a href="#fax">Fax</a></li>
 		    	<li><a href="#telepresence">Telepresence Room</a></li>
 	    </ul>
-  </div> <!-- col-md-3 -->
+  </div> <!-- left_col -->
+  <!-- </div> <!-- col-md-3 -->
 
 
 
@@ -66,7 +68,8 @@
 
 
 
-  <div class="col-md-9">
+  <!-- <div class="col-md-9"> -->
+  <div id="right_col">
 
     <div id="classrooms">
     		<h3>Classrooms</h3>
@@ -226,7 +229,7 @@
 				file menu.</p>
 		</div>
 
-		<div id="hotel_office">
+		<div id="hotel_offices">
 			<h3>Faculty Hotel Offices</h3>
 			<p>The monitor, keyboard and mouse are connected to a switcher box that allows
 				them to be easily switched to connect to either the desktop computer or a laptop. <br>
@@ -277,7 +280,7 @@
 					<p>A conference phone is kept at the main desk and can be setup in
 						 any of the rooms or offices at the downtown campus.</p>
 					<ul>
-						<li>The phone number for it is XXXXXXXXXXX</li>
+						<li>The phone number for it is 422-4774</li>
 						<li>To reserve the phone please make a request with reception or the
 							  office manager</li>
 				    <li>For help setting up the phone and using it please check with ITS (Kenji)</li>
@@ -300,9 +303,10 @@
 			<h3>Fax</h3>
 			<ul>
 				<li>The Ricoh machine in the copy room has faxing enabled with fax number
-					<b>415-422-XXXXXXX</b></li>
+					<b>415-422-6315</b></li>
 				<li>To send a fax press the Fax button to the left of the display and
-					enter your copier access code</li>
+					enter your copier access code. When entering the fax number you
+					need to put 9 in front of it unless it is a USF extension.</li>
 					<li>A fax machine for student use is located next to the 5th floor
 						Pharos printer in the hallway by the copy room.</li>
 			</ul>
@@ -310,7 +314,8 @@
 
 		<div id="telepresence">
 			<h3>Telepresence / Video Conferencing</h3>
-			<p>A Telepresence system is installed in room 504</p>
+			<p>A Telepresence system is installed in room 504 that can connect
+				to the room in Malloy Hall 405.</p>
 			<ul>
 				<li>XXXXXXXXX</li>
 				<li></li>
@@ -324,17 +329,19 @@
 			<p></p>
 		</div> <!-- # -->
 
-  </div> <!-- col-md-9 -->
+  <!-- </div> <!-- col-md-9 -->
+  </div> <!-- right_col -->
 
 
-</div> <!-- row -->
+<!-- </div> <!-- row -->
 </div> <!-- container -->
 
-    <script src="js/vendor/jquery-1.11.1.js"></script>
-    <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
-    <!-- <script src="js/plugins.js"></script> -->
-    <script src="js/vendor/bootstrap.js"></script>
-    <script src="js/main.js"></script>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  <script src="js/vendor/jquery-1.11.1.js"></script>
+  <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
+  <!-- <script src="js/plugins.js"></script> -->
+  <script src="js/vendor/bootstrap.js"></script>
+  <script src="src/script.js"></script>
+  <script src="src/scroll.js"></script>
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

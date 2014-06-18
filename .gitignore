@@ -1,1 +1,7 @@
 .sass-cache
+src/scroll.js
+src/script.js
+src/tree.js
+css/compiled.css
+js/main.js
+.gitignore

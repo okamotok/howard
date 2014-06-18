@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     server = lr();
 
 var sassSources = [
-  'src/*.scss'
+  'src/*.sass'
 ];
 
 var coffeeSources = [
@@ -29,7 +29,7 @@ gulp.task('coffee', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
-          .pipe(concat('main.js'))
+          //.pipe(concat('main.js'))
           .pipe(gulp.dest('js'));
           //.pipe(uglify())
 });
