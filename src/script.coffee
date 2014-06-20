@@ -9,3 +9,9 @@ $('#left_col li:has(ul)>a').click( (e) ->
   hideNestedLinks()
   $(this).next().show()
 )
+
+#log a string to status box
+log = (s) ->
+  $('#stats').css('display', 'block')
+  $('#stats').append(s + '<br>')
+
