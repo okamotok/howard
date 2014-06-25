@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     server = lr();
 
 var sassSources = [
-  'src/*.sass'
+  'src/*.sass', 'src/*.scss'
 ];
 
 var coffeeSources = [
