@@ -30,7 +30,7 @@ gulp.task('coffee', function() {
 gulp.task('js', function() {
   gulp.src(jsSources)
           //.pipe(concat('main.js'))
-          .pipe(gulp.dest('js'));
+          //.pipe(gulp.dest('js'));
           //.pipe(uglify())
 });
 
