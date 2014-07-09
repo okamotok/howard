@@ -9,7 +9,7 @@ var gulp = require('gulp'),
     server = lr();
 
 var sassSources = [
-  'src/*.sass'
+  'src/*.sass', 'src/*.scss'
 ];
 
 var coffeeSources = [
@@ -48,7 +48,7 @@ gulp.task('watch', function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(coffeeSources, ['coffee']);
   gulp.watch(sassSources, ['sass']);
-  gulp.watch(['*.html', 'css/*.css','js/*.js' ], function(e) {
+  gulp.watch(['*.html', 'css/*.css','js/*.js','src/*.js' ], function(e) {
     server.changed(e.path);
   });
 });
