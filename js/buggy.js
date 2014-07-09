@@ -8,10 +8,10 @@ buggy = (function() {
     backgroundColor: "#ddd",
     position: 'fixed',
     top: '20px',
-    left: '50%'
+    left: '300px'
   };
   td_style = {
-    'font-size': '12px',
+    'font-size': '18px',
     padding: '5px',
     border: '1px solid black'
   };

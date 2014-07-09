@@ -11,8 +11,7 @@
 	<!-- <link rel="stylesheet" href="css/boilerplate.css"> -->
 	<!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
 	<!-- <link rel="stylesheet" href="css/bootstrap-theme.css"> -->
-	<link rel="stylesheet" href="css/compiled.css">
-	<link rel="stylesheet" href="css/zmenu.css">
+	<link rel="stylesheet" href="css/main.css">
   <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" /> -->
 	<!-- <script src="js/vendor/modernizr-2.8.0.js"></script> -->
 
@@ -378,58 +377,17 @@
   <!-- </div> <!-- col-md-9 -->
   </div> <!-- right_col -->
 
-
 <!-- </div> <!-- row -->
 </div> <!-- container -->
-<div id="stats"></div>
 
   <script src="js/vendor/jquery-1.11.1.js"></script>
   <!-- <script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.js"></script> -->
   <!-- <script src="js/plugins.js"></script> -->
   <!-- <script src="js/vendor/bootstrap.js"></script> -->
   <script src="js/buggy.js"></script>
-  <!-- <script src="src/script.js"></script> -->
+  <script src="src/menu.js"></script>
   <script src="src/scroll.js"></script>
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-<script>
-
-$(document).ready(function($) {
-  //left_col_width = $('#left_col').width()
-
-	$('#navList li').has('ul').hover(function() {
-      root_li = $(this);
-      nested_ul = $(this).find('ul:first');
-
-      //padding_top = parseInt(nested_ul.css('padding-top'));
-      //padding_left = parseInt(nested_ul.css('padding-left'));
-
-	    //x = root_li.offset().left + root_li.width() - padding_left;
-	   	x = root_li.width()
-      nested_ul.css('left',root_li.width());
-
-      //li_top_y =  Math.floor(root_li.offset().top);
-      //left_col_top_y = Math.floor($('#left_col').offset().top);
-      //y = li_top_y - left_col_top_y - padding_top;
-      nested_ul.css('top',0);
-
-	   	nested_ul.fadeIn('fast');
-
-	  }, function() {
-      root_li = $(this);
-      nested_ul = $(this).find('ul:first');
-	   	nested_ul.fadeOut('fast');
-	});
-
-});
-
-//Add a chevron to expandible menu items
-$('#navList li').has('ul').find('> a').each( function(){
- $(this).html($(this).text() + " <span style='float:right;'>&raquo;</span> ");
-});
-
-buggy(a.length);
-
-</script>
 </body>
 </html>
